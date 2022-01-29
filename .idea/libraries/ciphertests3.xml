@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ciphertests3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/ciphertests_jar/ciphertests.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

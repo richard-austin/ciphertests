@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "generate-serial-key": "^2.0.0"
+  }
+}
