@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 /**
- * Profanities: A Mary Whitehouse class which flags if the generated class contains any of its listed profanities.
+ * Profanities: A Mary Whitehouse class which flags if the generated product key contains any of the listed profanities.
  *              These are all four-letter words as the product key is a set of four dash separated four character strings.
  */
 public final class Profanities extends ArrayList<String> {
