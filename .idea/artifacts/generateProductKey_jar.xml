@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="generateProductKey:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/generateProductKey_jar</output-path>
+    <root id="archive" name="generateProductKey.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="ciphertests.main" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.15/49d94806b6e3dc933dacbd8acb0fdbab8ebd1e5d/commons-codec-1.15.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

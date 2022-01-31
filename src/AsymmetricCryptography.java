@@ -84,28 +84,4 @@ public class AsymmetricCryptography {
         fis.close();
         return fbytes;
     }
-
-    public static void main(String[] args) throws Exception {
-        ProductKeyGen pkg = new ProductKeyGen();
-
-        AsymmetricCryptography ac = new AsymmetricCryptography();
-        PrivateKey privateKey = ac.getPrivate("KeyPair/privateKey");
-        PublicKey publicKey = ac.getPublic("KeyPair/publicKey");
-
-        String msg = pkg.generate(16, '-', 4);
-        String encrypted_msg = ac.encryptText(msg, publicKey);
-        String decrypted_msg = ac.decryptText(encrypted_msg, privateKey);
-        System.out.println("Original Message: " + msg +
-                "\nEncrypted Message: " + encrypted_msg
-                + "\nDecrypted Message: " + decrypted_msg);
-
-        if (new File("KeyPair/text.txt").exists()) {
-            ac.encryptFile(ac.getFileInBytes(new File("KeyPair/text.txt")),
-                    new File("KeyPair/text_encrypted.txt"),publicKey);
-            ac.decryptFile(ac.getFileInBytes(new File("KeyPair/text_encrypted.txt")),
-                    new File("KeyPair/text_decrypted.txt"), privateKey);
-        } else {
-            System.out.println("Create a file text.txt under folder KeyPair");
-        }
-    }
 }

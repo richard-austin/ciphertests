@@ -28,13 +28,4 @@ public class ProductKeyGen {
 
         return retVal.toString();
     }
-
-    public static void main(String[] args) {
-        ProductKeyGen pkg = new ProductKeyGen();
-        for(int i = 0; i < 100000000; ++i)
-        {
-            String key = pkg.generate(16, '-', 4);
-                System.out.println(i+" = "+key);
-        }
-    }
 }

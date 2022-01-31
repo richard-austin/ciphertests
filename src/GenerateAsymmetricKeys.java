@@ -8,14 +8,14 @@ import java.security.NoSuchProviderException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
-public class GenerateKeys {
+public class GenerateAsymmetricKeys {
 
     private KeyPairGenerator keyGen;
     private KeyPair pair;
     private PrivateKey privateKey;
     private PublicKey publicKey;
 
-    public GenerateKeys(int keylength) throws NoSuchAlgorithmException, NoSuchProviderException {
+    public GenerateAsymmetricKeys(int keylength) throws NoSuchAlgorithmException, NoSuchProviderException {
         this.keyGen = KeyPairGenerator.getInstance("RSA");
         this.keyGen.initialize(keylength);
     }
@@ -45,9 +45,9 @@ public class GenerateKeys {
     }
 
     public static void main(String[] args) {
-        GenerateKeys gk;
+        GenerateAsymmetricKeys gk;
         try {
-            gk = new GenerateKeys(4096);
+            gk = new GenerateAsymmetricKeys(4096);
             gk.createKeys();
             gk.writeToFile("KeyPair/publicKey", gk.getPublicKey().getEncoded());
             gk.writeToFile("KeyPair/privateKey", gk.getPrivateKey().getEncoded());
