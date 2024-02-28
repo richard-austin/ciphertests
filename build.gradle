@@ -18,4 +18,5 @@ sourceSets {
 dependencies {
     compileOnly 'junit:junit:4.12'
     implementation 'commons-codec:commons-codec:1.15'
+    implementation 'javax.jms:javax.jms-api:2.0.1'
 }
