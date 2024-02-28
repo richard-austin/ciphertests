@@ -1,14 +1,10 @@
 // Java program to create a
 // asymmetric key
 
-import org.apache.commons.codec.binary.Hex;
 
 import javax.crypto.Cipher;
-import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.OAEPParameterSpec;
 import javax.crypto.spec.PSource;
-import javax.jms.BytesMessage;
-import java.nio.ByteBuffer;
 import java.security.*;
 import java.security.spec.MGF1ParameterSpec;
 
